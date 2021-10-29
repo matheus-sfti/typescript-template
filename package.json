@@ -1,0 +1,36 @@
+{
+  "name": "teste-editorconfig",
+  "version": "1.0.0",
+  "main": "./build/start/server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "dev": "ts-node-dev --respawn --transpile-only --inspect -- ./src/start/server.ts",
+    "lint": "eslint --fix --ext .ts,.json .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.6",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.1.6",
+    "ts-jest": "^27.0.7",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
