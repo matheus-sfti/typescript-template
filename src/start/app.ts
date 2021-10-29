@@ -16,6 +16,8 @@ app.use((req: Request, res: Response) =>
   res.status(404).json({ message: 'Page Not Found' })
 );
 
+alert('aaaa');
+
 app.use((err: Errback, req: Request, res: Response, next: NextFunction) =>
   res.status(500).json({ message: 'Internal Server Error' })
 );
