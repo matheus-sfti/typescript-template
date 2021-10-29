@@ -1,5 +1,8 @@
 # TypeScript Template
 
+## Gerenciador de pacotes
+```npm install -g yarn```
+
 ## Plugins necessários
   - [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
