@@ -1,6 +1,6 @@
 import request from 'supertest';
 
-import app from '../../src/start/app';
+import { app } from '../src/app';
 
 describe('Teste de rota', () =>
   it('Deve retornar status http 200 e uma propriedade "message" (rota: GET/)', async () => {

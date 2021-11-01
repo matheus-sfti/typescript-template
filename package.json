@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf ./build && tsc",
-    "dev": "ts-node-dev --respawn --transpile-only --inspect -- ./src/start/server.ts",
+    "dev": "ts-node-dev  --respawn --transpile-only --inspect -- ./src/server.ts",
     "lint": "eslint --fix --ext .ts,.json .",
     "test": "jest"
   },
@@ -32,6 +32,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
   }
 }
